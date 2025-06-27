@@ -51,7 +51,7 @@ elements_per_file = file_size // np.dtype(dtype).itemsize
 a = -1000
 b = 1000
 # —— 开始生成 —— #
-for i in range(42 * 3, num_files + 1 + 42 * 3):
+for i in range(42 * 4, num_files + 1 + 42 * 4):
     # 生成随机浮点数据，均匀分布在 [0, 1)
     arr = (b - a) * np.random.rand(elements_per_file).astype(dtype) + a
     path = os.path.join(output_dir, f'file_{i:03d}.npy')
